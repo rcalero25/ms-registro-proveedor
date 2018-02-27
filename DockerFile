@@ -1,0 +1,7 @@
+FROM python:2
+
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /codigoms
+WORKDIR /codigoms
+COPY . /codigoms/
+RUN pip install -r requirements.txt
